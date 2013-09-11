@@ -25,10 +25,13 @@
 	} );
 
 	/**
-	 * Enables menu toggle for small screens.
+	 * Enables menu toggle for small screens.  Added expanding animation on
+	 * first click.
 	 */
 	( function() {
 		var nav = $( '#site-navigation' ), button, menu;
+		var navCounter = 0;
+
 		if ( ! nav )
 			return;
 
@@ -44,7 +47,22 @@
 		}
 
 		$( '.menu-toggle' ).on( 'click.twentythirteen', function() {
-			nav.toggleClass( 'toggled-on' );
+			if (navCounter===0) {
+				nav.addClass( 'toggled-on' );
+				var navHeight = nav.css('height');
+				nav.removeClass('toggled-on');
+				nav.animate({'height':navHeight}, 500, function(){
+					nav.addClass('toggled-on')
+				});
+				navCounter++;
+			}
+			else {
+				nav.animate({'height':45}, 0, function(){
+					nav.css('height','auto')
+				})
+				nav.removeClass('toggled-on');
+				navCounter--;
+			}
 		} );
 	} )();
 
