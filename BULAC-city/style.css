@@ -916,6 +916,42 @@ ul.nav-menu li:hover > ul,
 	font-style: italic;
 }
 
+/* Navigation/content adjustment for subsite */
+#primary .nav-menu {
+    display: inline-block;
+    margin: 1em;
+    vertical-align:top;
+    width: 100%;
+}
+
+#primary .nav-menu li {
+	display: block;
+}
+
+#primary .nav-menu li a {
+    color: white;
+    background: #220E10;
+   	margin-bottom:1px;
+}
+
+#primary .nav-menu .current_page_item > a {
+    color: #BC360A;
+}
+
+#content {
+    display: inline-block;
+}
+
+.menu-menu-container {
+	display:inline-block;
+	vertical-align: top;
+}
+
+.site-main {
+	position: relative;
+	max-width: 1071px;
+	margin: 0 auto;
+}
 .menu-toggle {
 	display: none;
 }

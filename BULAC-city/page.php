@@ -14,6 +14,12 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
+		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+
+		<!-- Sidebar navigation -->
+
+
 		<div id="content" class="site-content" role="main">
 
 			<?php /* The loop */ ?>
