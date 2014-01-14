@@ -1,0 +1,27 @@
+{
+  "name": "bulac",
+  "version": "0.0.0",
+  "description": "BULAC =====",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+      "grunt":"~0.4.2",
+      "grunt-contrib-sass":"~0.6.0",
+      "grunt-contrib-watch":"~0.5.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PradatiusD/bulac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PradatiusD/bulac/issues"
+  },
+  "homepage": "http://bulac.org"
+}
