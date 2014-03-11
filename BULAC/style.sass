@@ -1,17 +1,38 @@
+// For reference
+// http://foundation.zurb.com/docs/v/3.2.5/sass-settings.php
 
-/*
-Theme Name: BULAC
-Theme URI: http://wordpress.org/themes/BULAC
-Author: Prada Designers & The WordPress Theme
-Author URI: http://PradaDesigners.com
-Description: Custom-built multi-site based project for the Brown University Latino Alumni Council.  Based off the 2013 Wordpress theme and the wonderful work of the WordPress Team.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: BULAC
+$red: #C00404
+$yellow: #FC0
+$brown: #3A1E1A
+$tan: #CCC6B7
+$black: #363636
 
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
-*/
+
+
+$primary-color: $red
+$secondary-color: $yellow
+
+$body-font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif
+$body-font-color: $black
+
+$header-font-family: 'Arvo', serif, $body-font-family
+$header-font-weight: normal
+
+$topbar-bg-color: $brown
+$topbar-bg: $topbar-bg-color
+
+$topbar-height: 45px
+$topbar-margin-bottom: 1em
+
+
+@import "info"
+@import "bower_components/foundation/scss/normalize.scss"
+@import "bower_components/foundation/scss/foundation.scss"
+
+
+// Fix for admin bar
+#wpadminbar
+	@media screen and (max-width:600px)
+		top: -46px !important
+
 

@@ -1,0 +1,17 @@
+{
+  "name": "bulac",
+  "version": "0.0.0",
+  "homepage": "https://github.com/PradatiusD/bulac",
+  "authors": [
+    "PradatiusD <danielprada2012@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -3,3 +3,4 @@ _notes/
 */*/_notes/
 node_modules
 .sass-cache/
+bower_components/
