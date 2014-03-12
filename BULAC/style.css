@@ -3,11 +3,11 @@ Theme Name: BULAC
 Theme URI: http://wordpress.org/themes/BULAC
 Author: Prada Designers
 Author URI: http://PradaDesigners.com
-Description: Custom-built multi-site based project for the Brown University Latino Alumni Council.  Based off the 2013 Wordpress theme and the wonderful work of the WordPress Team.
+Description: Custom-built multi-site based project for the Brown University Latino Alumni Council. Based off the Foundation web development framework by Zurb.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Tags: brown, red, foundation, sidebar
 Text Domain: BULAC
 
 This theme, like WordPress, is licensed under the GPL.
@@ -6610,3 +6610,11 @@ aside nav h2 {
   padding-bottom: 0.25em; }
 aside nav ul {
   list-style-type: none; }
+
+.bottom-widgets {
+  background: #3a1e1a;
+  padding-top: 1em; }
+  .bottom-widgets h5 {
+    color: #ffcc00; }
+  .bottom-widgets p, .bottom-widgets ul, .bottom-widgets abbr {
+    color: white; }

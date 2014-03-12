@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+		<script src="<?php echo get_stylesheet_directory_uri().'/modernizr.js'; ?>"></script>
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php wp_head(); ?>
 	</head>

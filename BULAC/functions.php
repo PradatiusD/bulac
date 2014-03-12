@@ -45,3 +45,15 @@
 		}
 
 	}
+
+	if (function_exists('register_sidebar')) {
+		register_sidebar(array(
+			'name' => 'Footer Widgets',
+			'id'   => 'footer-widgets',
+			'description'   => 'Widget Area',
+			'before_widget' => '<div class="large-4 columns">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h5>',
+			'after_title'   => '</h5>'
+			));
+	}

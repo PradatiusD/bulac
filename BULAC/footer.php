@@ -27,6 +27,14 @@
 				</div>
 			</div>
 		</footer>
+		<section class="bottom-widgets">
+			<div class="row">
+				<div class="large-12 columns">
+					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Widgets') ) : ?>
+					<?php endif; ?>				
+				</div>
+			</div>
+		</section>
 		<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/bulac.min.js"></script>
 	</body>
 </html>

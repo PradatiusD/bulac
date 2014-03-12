@@ -34,11 +34,27 @@ module.exports = (grunt) ->
 			main:
 				files: [expanded: true, src: ['BULAC/**','BULAC-child/**'], dest: '../themes/']
 
-
+		'ftp-deploy':
+			bulac:
+				auth:
+					host: 'pradadesigners.com'
+					port: 21
+					authKey: 'key1'
+				src: 'BULAC'
+				dest: 'wp-content/themes/BULAC'
+			child:
+				auth:
+					host: 'pradadesigners.com'
+					port: 21
+					authKey: 'key1'
+				src: 'BULAC-child'
+				dest: 'wp-content/themes/BULAC-child'
 
 	)
 	grunt.loadNpmTasks('grunt-contrib-copy')
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-contrib-uglify')
 	grunt.loadNpmTasks('grunt-contrib-sass')
+	grunt.loadNpmTasks('grunt-ftp-deploy')
 	grunt.registerTask('default', ['watch'])
+	grunt.registerTask('deploy', ['ftp-deploy'])
