@@ -6618,3 +6618,7 @@ aside nav ul {
     color: #ffcc00; }
   .bottom-widgets p, .bottom-widgets ul, .bottom-widgets abbr {
     color: white; }
+
+main.full-width {
+  position: relative;
+  bottom: 20px; }
