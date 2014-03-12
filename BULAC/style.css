@@ -412,7 +412,7 @@ body {
   color: #363636;
   padding: 0;
   margin: 0;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -1345,7 +1345,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+      font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1395,9 +1395,9 @@ select {
     border-color: #de2d0f;
     color: white; }
   .alert-box.secondary {
-    background-color: #ffcc00;
-    border-color: #dbaf00;
-    color: white; }
+    background-color: #ccc6b7;
+    border-color: #b6ad97;
+    color: #4d4737; }
   .alert-box.warning {
     background-color: #f08a24;
     border-color: #de770f;
@@ -1405,7 +1405,7 @@ select {
   .alert-box.info {
     background-color: #a0d3e8;
     border-color: #74bfdd;
-    color: #574500; }
+    color: #4d4737; }
 
 [class*="block-grid-"] {
   display: block;
@@ -2421,8 +2421,8 @@ select {
   list-style: none;
   border-style: solid;
   border-width: 1px;
-  background-color: #ffe88c;
-  border-color: #ffe065;
+  background-color: #e8e5df;
+  border-color: #d5d0c4;
   -webkit-border-radius: 3px;
   border-radius: 3px; }
   .breadcrumbs > * {
@@ -2467,7 +2467,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2498,13 +2498,13 @@ button, .button {
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
-    background-color: #ffcc00;
-    border-color: #cca300;
-    color: white; }
+    background-color: #ccc6b7;
+    border-color: #aca28a;
+    color: #333333; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      background-color: #cca300; }
+      background-color: #aca28a; }
     button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-      color: white; }
+      color: #333333; }
   button.success, .button.success {
     background-color: #43ac6a;
     border-color: #368a55;
@@ -2573,19 +2573,19 @@ button, .button {
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       background-color: #c00404; }
     button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
-      background-color: #ffcc00;
-      border-color: #cca300;
-      color: white;
+      background-color: #ccc6b7;
+      border-color: #aca28a;
+      color: #333333;
       cursor: default;
       opacity: 0.7;
       -webkit-box-shadow: none;
       box-shadow: none; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #cca300; }
+        background-color: #aca28a; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        color: white; }
+        color: #333333; }
       button.disabled.secondary:hover, button.disabled.secondary:focus, button[disabled].secondary:hover, button[disabled].secondary:focus, .button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
-        background-color: #ffcc00; }
+        background-color: #ccc6b7; }
     button.disabled.success, button[disabled].success, .button.disabled.success, .button[disabled].success {
       background-color: #43ac6a;
       border-color: #368a55;
@@ -3795,7 +3795,7 @@ kbd {
 
 .label {
   font-weight: normal;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3820,8 +3820,8 @@ kbd {
     background-color: #43ac6a;
     color: white; }
   .label.secondary {
-    background-color: #ffcc00;
-    color: white; }
+    background-color: #ccc6b7;
+    color: #333333; }
 
 [data-magellan-expedition] {
   background: white;
@@ -4199,45 +4199,45 @@ ul.pagination {
     display: inline-block; }
 
 /* Panels */
-.panel {
+.panel, aside nav {
   border-style: solid;
   border-width: 1px;
   border-color: #d8d8d8;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
   background: #f2f2f2; }
-  .panel > :first-child {
+  .panel > :first-child, aside nav > :first-child {
     margin-top: 0; }
-  .panel > :last-child {
+  .panel > :last-child, aside nav > :last-child {
     margin-bottom: 0; }
-  .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6, .panel p {
+  .panel h1, aside nav h1, .panel h2, aside nav h2, .panel h3, aside nav h3, .panel h4, aside nav h4, .panel h5, aside nav h5, .panel h6, aside nav h6, .panel p, aside nav p {
     color: #333333; }
-  .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+  .panel h1, aside nav h1, .panel h2, aside nav h2, .panel h3, aside nav h3, .panel h4, aside nav h4, .panel h5, aside nav h5, .panel h6, aside nav h6 {
     line-height: 1;
     margin-bottom: 0.625rem; }
-    .panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+    .panel h1.subheader, aside nav h1.subheader, .panel h2.subheader, aside nav h2.subheader, .panel h3.subheader, aside nav h3.subheader, .panel h4.subheader, aside nav h4.subheader, .panel h5.subheader, aside nav h5.subheader, .panel h6.subheader, aside nav h6.subheader {
       line-height: 1.4; }
-  .panel.callout {
+  .panel.callout, aside nav.callout {
     border-style: solid;
     border-width: 1px;
     border-color: #feb8b8;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
     background: #ffeded; }
-    .panel.callout > :first-child {
+    .panel.callout > :first-child, aside nav.callout > :first-child {
       margin-top: 0; }
-    .panel.callout > :last-child {
+    .panel.callout > :last-child, aside nav.callout > :last-child {
       margin-bottom: 0; }
-    .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p {
+    .panel.callout h1, aside nav.callout h1, .panel.callout h2, aside nav.callout h2, .panel.callout h3, aside nav.callout h3, .panel.callout h4, aside nav.callout h4, .panel.callout h5, aside nav.callout h5, .panel.callout h6, aside nav.callout h6, .panel.callout p, aside nav.callout p {
       color: #333333; }
-    .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+    .panel.callout h1, aside nav.callout h1, .panel.callout h2, aside nav.callout h2, .panel.callout h3, aside nav.callout h3, .panel.callout h4, aside nav.callout h4, .panel.callout h5, aside nav.callout h5, .panel.callout h6, aside nav.callout h6 {
       line-height: 1;
       margin-bottom: 0.625rem; }
-      .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+      .panel.callout h1.subheader, aside nav.callout h1.subheader, .panel.callout h2.subheader, aside nav.callout h2.subheader, .panel.callout h3.subheader, aside nav.callout h3.subheader, .panel.callout h4.subheader, aside nav.callout h4.subheader, .panel.callout h5.subheader, aside nav.callout h5.subheader, .panel.callout h6.subheader, aside nav.callout h6.subheader {
         line-height: 1.4; }
-    .panel.callout a:not(.button) {
+    .panel.callout a:not(.button), aside nav.callout a:not(.button) {
       color: #c00404; }
-  .panel.radius {
+  .panel.radius, aside nav.radius {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
 
@@ -4256,7 +4256,7 @@ ul.pagination {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -4264,7 +4264,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -4299,7 +4299,7 @@ ul.pagination {
     height: 100%;
     display: block; }
   .progress.secondary .meter {
-    background: #ffcc00;
+    background: #ccc6b7;
     height: 100%;
     display: block; }
   .progress.success .meter {
@@ -4379,7 +4379,7 @@ ul.pagination {
   display: inline-block;
   position: absolute;
   height: 0.875rem;
-  background: #fcca00; }
+  background: #cac4b5; }
 
 .range-slider-handle {
   display: inline-block;
@@ -4501,7 +4501,7 @@ dialog[open] {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
+  font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -4513,7 +4513,7 @@ dialog[open] {
     .side-nav li.active > a:first-child:not(.button) {
       color: #fb2828;
       font-weight: normal;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
+      font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -4624,7 +4624,7 @@ dialog[open] {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4857,7 +4857,7 @@ table {
       background: #efefef;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+      font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -5160,7 +5160,7 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
     font-size: 0.8125rem;
     font-weight: normal;
     text-transform: none;
@@ -5173,9 +5173,9 @@ meta.foundation-mq-topbar {
       .top-bar-section ul li > a.button:hover {
         background: #8c0303; }
     .top-bar-section ul li > a.button.secondary {
-      background: #ffcc00; }
+      background: #ccc6b7; }
       .top-bar-section ul li > a.button.secondary:hover {
-        background: #e3b600; }
+        background: #bab29e; }
     .top-bar-section ul li > a.button.success {
       background: #43ac6a; }
       .top-bar-section ul li > a.button.success:hover {
@@ -5725,7 +5725,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Arvo", serif, "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+  font-family: "Arvo", serif, "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -6599,3 +6599,14 @@ th.hide-for-touch {
 @media screen and (max-width: 600px) {
   #wpadminbar {
     top: -46px !important; } }
+
+footer {
+  background: #ccc6b7;
+  min-height: 100px;
+  padding: 2em 0em; }
+
+aside nav h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  padding-bottom: 0.25em; }
+aside nav ul {
+  list-style-type: none; }

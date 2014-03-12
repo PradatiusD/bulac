@@ -3,7 +3,7 @@
 	<head>
 		<title><?php echo get_bloginfo(); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 		<?php wp_enqueue_script("jquery"); ?>
 		<?php wp_head(); ?>
@@ -23,7 +23,7 @@
 				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
 			</ul>
 			<section class="top-bar-section">
-				<!-- Right Nav Section -->
+				<!-- Header Nav -->
 					<?php wp_nav_menu(array(
 						'theme_location'  => 'main-nav',
 						'menu'            => '',

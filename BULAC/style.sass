@@ -10,9 +10,9 @@ $black: #363636
 
 
 $primary-color: $red
-$secondary-color: $yellow
+$secondary-color: $tan
 
-$body-font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif
+$body-font-family: "Open Sans", "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif
 $body-font-color: $black
 
 $header-font-family: 'Arvo', serif, $body-font-family
@@ -35,4 +35,17 @@ $topbar-margin-bottom: 1em
 	@media screen and (max-width:600px)
 		top: -46px !important
 
+footer
+	background: $tan
+	min-height: 100px
+	padding: 2em 0em
 
+aside nav
+	@extend .panel
+	
+	h2
+		border-bottom: 1px solid rgba(0, 0, 0, 0.13)
+		padding-bottom: 0.25em
+
+	ul
+		list-style-type: none

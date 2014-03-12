@@ -7,7 +7,7 @@ module.exports = (grunt) ->
 			dist:
 				files:
 					'BULAC/style.css': 'BULAC/style.sass'
-					'BULAC-city/style.css': 'BULAC-city/style.sass'
+					'BULAC-child/style.css': 'BULAC-child/style.sass'
 		watch:
 			styles:
 				files: ['**/*.sass']
@@ -28,11 +28,11 @@ module.exports = (grunt) ->
 				mangle: false
 			js:
 				files:
-					'BULAC/bulac.min.js': ['bower_components/foundation/js/foundation.js','bower_components/foundation/js/foundation/foundation.topbar.js','global.js']
+					'BULAC/bulac.min.js': ['bower_components/fastclick/lib/fastclick.js','bower_components/foundation/js/foundation.js','bower_components/foundation/js/foundation/foundation.topbar.js','global.js']
 
 		copy:
 			main:
-				files: [expanded: true, src: ['BULAC/**','BULAC-city/**'], dest: '../themes/']
+				files: [expanded: true, src: ['BULAC/**','BULAC-child/**'], dest: '../themes/']
 
 
 

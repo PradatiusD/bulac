@@ -1,0 +1,13 @@
+/*
+Theme Name:   BULAC Child
+Theme URI:    http://example.com/twenty-fourteen-child/
+Description:  BULAC Child Theme
+Author:       Prada Designers
+Author URI:   http://PradaDesigners.com
+Template:     BULAC
+Version:      1.0.0
+Tags:         brown, red white
+Text Domain:  BULAC
+*/
+.row {
+  max-width: 80rem; }
