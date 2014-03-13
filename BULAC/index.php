@@ -5,9 +5,13 @@
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<h1><?php the_title(); ?></h1>
-				<span class="radius secondary label">Posted on: <?php the_date('M dS, Y'); ?></span>
-				<br>
-				<br>
+
+				<?php if (is_page() == false): ;?>
+					<span class="radius secondary label">Posted on: <?php the_date('M dS, Y'); ?></span>
+					<br>
+					<br>
+				<?php endif;?>
+
 				<?php the_content('Read more...'); ?>
 				<hr>
 		<?php endwhile; else: ?>

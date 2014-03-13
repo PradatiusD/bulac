@@ -6596,6 +6596,9 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
+body {
+  -webkit-backface-visibility: hidden; }
+
 @media screen and (max-width: 600px) {
   #wpadminbar {
     top: -46px !important; } }
@@ -6622,3 +6625,9 @@ aside nav ul {
 main.full-width {
   position: relative;
   bottom: 20px; }
+
+div.css-search {
+  display: none; }
+
+.em-location-map-container {
+  width: 100% !important; }

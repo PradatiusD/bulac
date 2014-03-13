@@ -29,6 +29,9 @@ $topbar-margin-bottom: 1em
 @import "bower_components/foundation/scss/normalize.scss"
 @import "bower_components/foundation/scss/foundation.scss"
 
+body
+	-webkit-backface-visibility: hidden
+
 
 // Fix for admin bar
 #wpadminbar
@@ -64,3 +67,9 @@ aside nav
 main.full-width
 	position: relative
 	bottom: 20px
+
+div.css-search
+	display: none
+
+.em-location-map-container
+	width: 100% !important

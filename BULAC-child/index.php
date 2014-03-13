@@ -12,6 +12,12 @@
 
 				<h1><?php the_title(); ?></h1>
 
+				<?php if (is_page() == false): ;?>
+					<span class="radius secondary label">Posted on: <?php the_date('M dS, Y'); ?></span>
+					<br>
+					<br>
+				<?php endif;?>
+
 				<?php the_content('Read more...'); ?>
 
 		<?php endwhile; else: ?>
