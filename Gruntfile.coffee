@@ -28,7 +28,12 @@ module.exports = (grunt) ->
 				mangle: false
 			js:
 				files:
-					'BULAC/bulac.min.js': ['bower_components/fastclick/lib/fastclick.js','bower_components/foundation/js/foundation.js','bower_components/foundation/js/foundation/foundation.topbar.js','global.js']
+					'BULAC/bulac.min.js': [
+						'bower_components/fastclick/lib/fastclick.js',
+						'bower_components/foundation/js/foundation.js',
+						'bower_components/foundation/js/foundation/foundation.topbar.js',
+						'bower_components/foundation/js/foundation/foundation.alert.js',
+						'global.js']
 
 		copy:
 			main:

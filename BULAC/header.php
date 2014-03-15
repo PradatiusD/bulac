@@ -41,9 +41,18 @@
 						'link_after'      => '',
 						'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 						'depth'           => 0,
-						'walker'          => new My_Walker_Nav_Menu()
+						'walker'          => new Global_Header_Nav()
 					)); ?>
 			</section>
 		</nav>
 
+		<!-- For Mail Success -->
+		<?php if ($_GET['status'] === 'success'):?>
+			<div class="row">
+				<div data-alert class="alert-box success">
+					Hooray your e-mail was sent to the BULAC communications officer!
+					<a href="Javascript:void(0)" class="close">×</a>
+				</div>
+			</div>
+		<?php endif;?>
 

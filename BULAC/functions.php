@@ -10,7 +10,7 @@
 	add_theme_support('post-thumbnails');
 
 
-	class My_Walker_Nav_Menu extends Walker_Nav_Menu {
+	class Global_Header_Nav extends Walker_Nav_Menu {
 
 		function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
 			$element->has_children = !empty( $children_elements[$element->ID] );
@@ -57,3 +57,12 @@
 			'after_title'   => '</h5>'
 			));
 	}
+
+	function custom_login() { ?>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/style.css'; ?>" type="text/css" media="all" />
+	<?php }
+
+	add_action( 'login_enqueue_scripts', 'custom_login' );
+
+
+

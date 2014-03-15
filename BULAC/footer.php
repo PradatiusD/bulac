@@ -14,7 +14,7 @@
 				</div>
 
 				<div class="medium-4 columns">
-					<form method="post" action="http://zurb.com/responsive/subscribe">
+					<form method="post" action="<?php echo get_template_directory_uri().'/footer-mail.php';?>">
 						<div class="row collapse margintop-20px">
 							<div class="small-8 medium-8 columns">
 								<input type="text" name="email" placeholder="signup@example.com">
