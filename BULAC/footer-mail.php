@@ -8,7 +8,7 @@
 	$email = $_POST['email'];
 
 	echo "Your e-mail was sent";
-	// Send communications@bulac.com a message that this person wants to be added
+	// Send communications@bulac.org a message that this person wants to be added
 	wp_mail( 'communications@bulac.org', $email . 'wishes to be added to the list', 'Hello '.$email.' wants to be added to the BULAC listserv.' );
 
 	wp_redirect( add_query_arg( 'status','success', home_url() ) ); exit;	
