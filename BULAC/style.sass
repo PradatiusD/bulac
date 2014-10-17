@@ -7,8 +7,6 @@ $brown: #3A1E1A
 $tan: #CCC6B7
 $black: #363636
 
-
-
 $primary-color: $red
 $secondary-color: $tan
 
@@ -24,10 +22,13 @@ $topbar-bg: $topbar-bg-color
 $topbar-height: 45px
 $topbar-margin-bottom: 1em
 
-
 @import "info"
-@import "bower_components/foundation/scss/normalize.scss"
-@import "bower_components/foundation/scss/foundation.scss"
+@import "../bower_components/foundation/scss/normalize"
+@import "../bower_components/foundation/scss/foundation"
+
+
+.top-bar-section .dropdown
+	top: 41px !important
 
 body
 	-webkit-backface-visibility: hidden
@@ -44,7 +45,7 @@ footer
 	padding: 2em 0em
 
 aside nav
-	@extend .panel
+	+panel
 	
 	h2
 		border-bottom: 1px solid rgba(0, 0, 0, 0.13)
