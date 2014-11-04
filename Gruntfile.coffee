@@ -42,32 +42,18 @@ module.exports = (grunt) ->
 				files: [expanded: true, src: ['BULAC/**','BULAC-child/**'], dest: '../themes/']
 
 		'ftp-deploy':
-			pdBulac:
-				auth:
-					host: 'pradadesigners.com'
-					port: 21
-					authKey: 'key1'
-				src: 'BULAC'
-				dest: 'wp-content/themes/BULAC'
-			pdChild:
-				auth:
-					host: 'pradadesigners.com'
-					port: 21
-					authKey: 'key1'
-				src: 'BULAC-child'
-				dest: 'wp-content/themes/BULAC-child'
-			liveBulac:
+			parent:
 				auth:
 					host: 'bulac.org'
 					port: 21
-					authKey: 'key2'
+					authKey: 'bulac'
 				src: 'BULAC'
 				dest: 'wp-content/themes/BULAC'
-			liveChild:
+			child:
 				auth:
 					host: 'bulac.org'
 					port: 21
-					authKey: 'key2'
+					authKey: 'bulac'
 				src: 'BULAC-child'
 				dest: 'wp-content/themes/BULAC-child'
 	)
@@ -78,4 +64,3 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks('grunt-ftp-deploy')
 	grunt.registerTask('default', ['watch'])
 	grunt.registerTask('deploy', ['ftp-deploy'])
-	grunt.registerTask('push', ['ftp-deploy:liveBulac','ftp-deploy:liveChild'])
